@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    width: 70%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#taskInput:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 2px 4px rgba(76, 175, 80, 0.2);
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-1px);
+}
+
+#clearCompletedBtn {
+    background-color: #f44336;
+    margin-top: 10px;
+}
+
+#clearCompletedBtn:hover {
+    background-color: #d32f2f;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    padding: 15px;
+    margin: 8px 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+li input[type="checkbox"] {
+    margin-right: 15px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+li label {
+    flex-grow: 1;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+    font-style: italic;
+}
+
+.task-controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.delete-btn {
+    background-color: #ff5555;
+    padding: 6px 12px;
+    font-size: 12px;
+    margin-left: auto;
+}
+
+.delete-btn:hover {
+    background-color: #ff3333;
+}
+
+.empty-message {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px dashed #ddd;
+}
+
+.task-stats {
+    text-align: center;
+    margin: 15px 0;
+    color: #666;
+    font-size: 14px;
+}
